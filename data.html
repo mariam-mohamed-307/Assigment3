@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>People Data</h1>
+        <p>Search for a person or sort the table by name or age.</p>
+
+        <div class="navigation">
+            <a href="validation.html">Registration Form</a>
+        </div>
+
+        <div class="form-group">
+            <label for="searchInput">Search</label>
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search by name, age, or city..."
+                autocomplete="off">
+        </div>
+
+        <div class="buttons">
+            <button type="button" id="sortName">Sort by Name</button>
+            <button type="button" id="sortAge">Sort by Age</button>
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">City</th>
+                    </tr>
+                </thead>
+                <tbody id="peopleTable">
+                    <!-- JavaScript will add rows here -->
+                </tbody>
+            </table>
+        </div>
+
+        <p id="noResults" role="status"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
